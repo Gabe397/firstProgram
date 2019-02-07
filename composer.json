@@ -1,0 +1,7 @@
+{
+    "name": "gabe3/first-program",
+    "require": {
+        "phpunit/phpunit": "8"
+    },
+    "license": "MIT"
+}
