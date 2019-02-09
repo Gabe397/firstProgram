@@ -18,5 +18,14 @@ class WordTest
         );
     }
 
+    public function testCannotBeCreatedFromValidWord(): void
+    {
+        $this->expectException(InvalidArgumentException::class);
+
+        Word::fromString('invalid');
+    }
+
+
+
 
 }
