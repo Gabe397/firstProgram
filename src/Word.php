@@ -28,12 +28,22 @@ class Word
         return $this->word;
     }
 
-  
+
+    public function wordProp()
+    {
+        $wordLen = strlen($this->word);
+
+        if($wordLen%2 == 0)
+            return "even";
+        else
+            return "odd";
+    }
+
 
 
     private function ensureIsValidWord(string $word): void
     {
-        /*??*/
+        /*??Need Help??w*/
     }
 
 
