@@ -5,7 +5,7 @@
  * Date: 2/9/2019
  * Time: 12:25 PM
  */
-declare(string_types=1);
+declare(strict_types=1);
 
 use PHPUnit\Framework\TestCases;
 class WordTest
@@ -24,8 +24,6 @@ class WordTest
 
         Word::fromString('invalid');
     }
-
-
 
 
 }

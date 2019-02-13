@@ -13,8 +13,6 @@ class Word
 
     private function __construct(string $word)
     {
-        $this->ensureIsValidWord($word);
-
         $this->word = $word;
     }
 
@@ -38,14 +36,5 @@ class Word
         else
             return "odd";
     }
-
-
-
-    private function ensureIsValidWord(string $word): void
-    {
-        /*??Need Help??w*/
-    }
-
-
 
 }
