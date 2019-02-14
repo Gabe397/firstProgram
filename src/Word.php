@@ -5,36 +5,38 @@
  * Date: 2/9/2019
  * Time: 12:26 PM
  */
-declare(strict_types=1);
 
-class Word
+
+final class Word
 {
-    private $word;
+    var $word;
 
-    private function __construct(string $word)
+    public function __construct(string $word)
     {
         $this->word = $word;
     }
 
-    public static function fromString(string $word): self
-    {
-        return new self($word);
+    public function hello(){
+        return "hello";
     }
-
-    public function _toString(): string
-    {
-        return $this->word;
-    }
-
 
     public function wordProp()
     {
-        $wordLen = strlen($this->word);
+        $word = $this->word;
+        $wordLen = strlen($word);
 
         if($wordLen%2 == 0)
-            return "even";
+            return print "even";
         else
-            return "odd";
+            return print "odd";
     }
 
 }
+
+function greet($par){
+    return new Word($par);
+}
+
+$bar = greet("hello")->wordProp();
+
+

@@ -8,7 +8,8 @@
 declare(strict_types=1);
 
 use PHPUnit\Framework\TestCases;
-class WordTest
+
+final class WordTest extends TestCases
 {
     public function testCanBeCreatedFromValidWord(): void
     {
