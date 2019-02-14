@@ -15,10 +15,7 @@ final class Word
     {
         $this->word = $word;
     }
-
-    public function hello(){
-        return "hello";
-    }
+    
 
     public function wordProp()
     {
